@@ -5,11 +5,15 @@ class RootController extends GetxController {
   List tabs = [];
 
   onRender() {
-    tabs = ["assets"];
+    tabs = [
+      "assets/icons/home.svg",
+      "assets/icons/account.svg",
+    ];
   }
 
   @override
   void onInit() {
+    onRender();
     super.onInit();
   }
 }
